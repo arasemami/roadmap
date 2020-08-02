@@ -1,0 +1,31 @@
+
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.roadmap-bar {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .roadmap-item {
+        width: 50px;
+        height: 50px;
+        border-radius: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #dddddd;
+        margin: 10px;
+        cursor: pointer;
+    }
+}
+
+.roadmap-content {
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}

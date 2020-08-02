@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="roadmap-bar">
+        <ng-container *ngFor="let roadmapItem of roadmapItems">
+            <div *ngIf="!roadmapItem.item" class="roadmap-item" (click)="showContentOfRoadmap(roadmapItem)">
+                <p>{{roadmapItem.title}}</p>
+            </div>
+        </ng-container>
+    </div>
+    <div class="roadmap-content" *ngIf="roadmapContent"> 
+            <h3>Description</h3>
+            <p>{{roadmapContent.title}}</p>
+    </div>
+</div>
